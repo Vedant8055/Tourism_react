@@ -1,0 +1,341 @@
+/* nav */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: solid;
+  border-width: 1px;
+  border-radius: 40px;
+
+}
+
+.Title {
+  font-size: 24px;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 160px; /* adjust as necessary */
+  top: 0;
+}
+
+.dropdown-content a, .dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover, .dropdown-content2 a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content .dropdown:hover .dropdown-content2 {
+  display: block;
+}
+
+  /*body*/
+  .bdy{
+    padding: 20px;
+    display: grid;
+    
+  }
+  .input1{
+    position: relative;
+    left: 500px;
+    height: 60px;
+    width: 83%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    border-radius: 15px;
+    border-width: 0px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .inputDate{
+    position: relative;
+    left: 25%;
+    margin-left: 20px;
+    height: 60px;
+    width: 5%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    border-radius: 15px;
+    border-width: 0px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .inputPeople{
+    position: relative;
+    left: 25%;
+    margin-left: 20px;
+    height: 60px;
+    width: 3%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    border-radius: 15px;
+    border-width: 0px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .TravelImg{
+    background-image: url(/src/assets/travel.jpg);
+    height: 300px;
+    width: 50%;
+   left: 24%;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .inputRow{
+    display: flex;
+  }
+
+  /* .SearchButton{
+    position: relative;
+    left: 25%;
+    margin-left: 20px;
+    height: 60px;
+    width: 7%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 10px;
+    border-radius: 15px;
+    border-width: 0px;
+    margin-top: 40px;
+    font-size: 10px;
+    text-align: center;
+    font-size: 24px;
+  } */
+
+
+
+
+
+/* CSS */
+.SearchButton {
+    top: 50px ;
+    position: relative;
+    left: 25%;
+    margin-left: 20px;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.SearchButton:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.SearchButton:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.SearchButton:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.LogBtn {
+  margin-left: 72%;
+  margin-top: 10px;
+  width: 80px;
+  height: 40px;
+  border-radius: 15px;
+  font-size: large;
+}
+.DarkBTn{
+  margin-left: 10px;
+  width: 140px;
+  height: 40px;
+  border-radius: 15px;
+  font-size: large;
+}
+.moto {
+  text-align: center;
+  margin-top:180px ;
+  
+}
+.img2{
+  background-image: url(/src/assets/tra.jpg);
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+ left: 24%;
+ margin-right: 50px;
+  position: relative;
+  border: none;
+  
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.img2:hover{
+  transform: translateY(-20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.divimg{
+  display: inline-block;
+  position: relative;
+}
+
+
+/* dropdown style input*/
+.App{
+  position: flex;
+  display: inline-block;
+  left: 30%;
+}
+
+.Block1{
+text-align: center;
+  position: relative;
+ display: inline-block;
+  width: 300px;
+  height: 210px;
+  border: solid;
+  border-width: 3px;
+  border-radius: 15px;
+  padding: 0px;
+  margin-right: 30px;
+  margin-top: 50px;
+  
+}
+.blockcontainer{
+  display: flex;
+}
+.imagedisplay {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: auto;
+  position: relative;
+  display: flex;
+}
+
+.imdf {
+  height: 150px;
+  width: auto;
+  position: relative;
+  display: flex;
+}
+.igblock{
+  justify-self: center;
+  position: relative;
+  display: inline-block;
+
+}
+.blockheading{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.blocksubheading{
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: -35px;
+  font-size: 22px;
+}
+.blocksubheading2{
+  font-size: 15px;
+margin-left: 10px;
+margin-top: -20px;
+}
+
+.slideshow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.nav-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+.slideimage{
+width: 100%;
+height: 180px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
